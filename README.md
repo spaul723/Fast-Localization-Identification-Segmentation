@@ -35,7 +35,11 @@ All the data to be identified will be placed in the folder `sample`.
 ## Run program
 
 ```bash
+# test a single data
 python test_identify.py
+
+# test all data in sample folder
+python test_batch.py
 ```
 
 The results will be stored in `results`, where `single_mask` and `npy` store the mask of the single vertebra and the identification network input data, and the `final_mask` stores the final labeled entire spine mask. In the process of code execution, the central coordinates of each vertebra, the corresponding classification results of each vertebra and the single vertebra mask will be obtained. 
