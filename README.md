@@ -22,6 +22,10 @@ pip install SimpleITK==2.0.2
 
 We have trained all the relevant models, and saved the model parameters, stored in the following Baidu cloud disk link, please download and store according to the given path. 
 
+```txt
+https://pan.baidu.com/s/1gFwo8osB6w5N0f97t9LVjg?pwd=qeb2 
+```
+
 Of course, you can also retrain the model yourself, but the training code is not given here, you can contact me directly through `spaul0723@163.com`.
 
 ## Data preparation
