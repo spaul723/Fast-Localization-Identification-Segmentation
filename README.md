@@ -1,8 +1,10 @@
 # Fast spine localization, identification and segmentation
 
-This code integrates the three steps of segmentation, localization and identification of the spine. Firstly, binary segmentation of the spine is performed to get the whole vertebral mask.
+This repository integrates the three steps of **segmentation, localization and identification of the spine**. 
 
-The positioning information of the single vertebral body (estimate dcenter-of-mass coordinate) was obtained by the yolov7 model with the mask of the whole vertebral body, and then the segmentation mask of the single vertebral body was predicted by the positioning information.
+Firstly, binary segmentation of the spine is performed to get the whole vertebral mask.
+
+Then positioning information of the single vertebral body (estimate dcenter-of-mass coordinate) was obtained by the yolov7 model with the mask of the whole vertebral body, and then the segmentation mask of the single vertebral body was predicted by the positioning information.
 
 Finally, a fast recognition network was used to identify the classification of individual vertebrae, assign the recognition results to the single vertebral mask and synthesize the entire vertebral mask.
 
@@ -20,13 +22,11 @@ pip install SimpleITK==2.0.2
 
 ## Model download
 
-We have trained all the relevant models, and saved the model parameters, stored in the following Baidu cloud disk link, please download and store according to the given path. 
+We have trained all the relevant models, and saved the model parameters, stored in the following Baidu cloud disk link, please download and store according to the given path:
+> **Link**: [Get All Models](https://pan.baidu.com/s/1gFwo8osB6w5N0f97t9LVjg?pwd=qeb2).
 
-```txt
-https://pan.baidu.com/s/1gFwo8osB6w5N0f97t9LVjg?pwd=qeb2 
-```
-
-Of course, you can also retrain the model yourself, but the training code is not given here, you can contact me directly through `spaul0723@163.com`.
+Of course, you can also retrain the model yourself, but the training code is not given here, you can contact me directly through:
+> `spaul0723@163.com`.
 
 ## Data preparation
 
